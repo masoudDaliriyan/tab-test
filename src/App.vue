@@ -12,6 +12,7 @@ import Tab from './components/Tab.vue'
 <style>
 body {
   background-color: rgb(245 244 238);
+  font-family: Vazirmatn, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 </style>
 
