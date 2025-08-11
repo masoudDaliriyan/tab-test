@@ -11,15 +11,15 @@ const SHARED_CARDS = [
 // Default tabs configuration
 const DEFAULT_TABS = [
     {
-        id: 0,
-        title: 'غیر مستقیم',
-        icon: 'brain-duotone (1) 1.png',
-        cards: [...SHARED_CARDS]
-    },
-    {
         id: 1,
         title: 'مستقیم',
         icon: 'heartbeat-duotone 1.png',
+        cards: [...SHARED_CARDS]
+    },
+    {
+        id: 0,
+        title: 'غیر مستقیم',
+        icon: 'brain-duotone (1) 1.png',
         cards: [...SHARED_CARDS]
     }
 ];

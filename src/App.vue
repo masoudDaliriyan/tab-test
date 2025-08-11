@@ -3,15 +3,24 @@ import Tab from './components/Tab.vue'
 </script>
 
 <template>
-  <div>
-    <h1>آفرهای اسپانسرینگ</h1>
+  <div class="app">
+    <h1 class="app__title">آفرهای اسپانسرینگ</h1>
     <Tab />
   </div>
 </template>
 
+<style>
+body {
+  background-color: rgb(245 244 238);
+}
+</style>
+
 <style scoped>
-h1 {
-  text-align: center;
+.app__title {
+  margin-top: 100px;
   margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
 }
 </style>

@@ -62,7 +62,6 @@ const onDrop = (e, targetIndex, targetTabId) => {
         :class="{ active: store.activeTab === tab.id }"
         class="tab-button"
       >
-        <img :src="`/${tab.icon}`" :alt="tab.title" class="tab-icon" />
         {{ tab.title }}
       </button>
     </div>
@@ -95,14 +94,16 @@ const onDrop = (e, targetIndex, targetTabId) => {
 .tab-container {
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+  direction: rtl;
 }
 
 .tab-headers {
+  margin: 0 auto;
   display: flex;
-  background-color: #f5f5f5;
+  background-color: #fff;
+  width: 280px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .tab-button {
@@ -111,16 +112,16 @@ const onDrop = (e, targetIndex, targetTabId) => {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   transition: background-color 0.3s;
 }
 
 .tab-button:hover {
-  background-color: #e0e0e0;
+  background-color: rgb(5 165 147);
 }
 
 .tab-button.active {
-  background-color: #007bff;
+  background-color:rgb(5 165 147);
   color: white;
 }
 
@@ -139,13 +140,12 @@ const onDrop = (e, targetIndex, targetTabId) => {
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 10px;
   height: 100%;
 }
 
 .card {
   background: white;
-  border: 2px solid #e0e0e0;
   border-radius: 8px;
   padding: 16px;
   transition: all 0.3s ease;
@@ -185,8 +185,8 @@ const onDrop = (e, targetIndex, targetTabId) => {
 }
 
 .card-icon {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   margin-bottom: 12px;
   display: block;
 }
